@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Contoh Halaman Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Selamat datang di halaman web saya!</h1>
+    
+    <p>Ini adalah contoh paragraf.</p>
+    
+    <img src="gambar.jpg" alt="Gambar Contoh">
+    
+    <a href="https://www.contoh.com">Ini adalah contoh tautan</a>
+    
+    <script>
+       function greetUser(name) {
+    alert("Halo, " + name + "! Selamat datang di halaman web kami.");
+}
+
+document.getElementById("submitBtn").addEventListener("click", function() {
+    var name = document.getElementById("nameInput").value;
+    greetUser(name);
+});
+    </script>
+</body>
+</html>
